@@ -1,0 +1,101 @@
+body {
+    background-color: #141d26;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.topBar {
+    padding:5px;
+}
+.searchBar{
+    background-color: #1b2836;
+    width: 35%;
+    display: flex;
+    border-style:none;
+    z-index: 0;
+    position: relative;
+    border-radius: 0;
+    padding-left: 20px;
+    color: white;
+    height: 30px;
+    align-items: stretch;
+}
+
+.rounded-corners-all-around {
+    border-radius: 15px;
+}
+
+.icon {
+    color: rgb(29,161,242);
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 12px;
+}
+
+
+.hyperlinkUL {
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.hyperlinkLi a{
+    float:left;
+    text-decoration: none;
+    color: rgb(110,118,125);
+    font-size:15px;
+    padding: 16px;
+}
+
+.hyperLinkForYou a{
+    float: left;
+    text-decoration: none;
+    border-bottom-color: rgb(29,161,242);
+    color: rgb(29,161,242);
+    font-size: 15px;
+    padding: 16px;
+    border-bottom-style: solid;
+}
+
+.topic {
+    font-size: 13px;
+    color: rgb(110,118,125)
+}
+
+.author {
+    color: white;
+}
+
+.profileImage {
+    float:right;
+    border-radius: 15px;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    right: 16px;
+}
+
+.grid-row {
+    clear: both;
+    padding: 10px;
+    border-top-color: rgb(110,118,125);
+    border-top-style: solid;
+}
+
+#selector-1 {
+    padding:10px;
+}
+
+.title {
+    color: white;
+    font-weight: 600;
+}
+
+.elipses {
+    color:rgb(110,118,125);
+    font-size:20px;
+    float:right;
+    right: 16px;
+}
