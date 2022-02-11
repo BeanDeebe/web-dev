@@ -3,6 +3,8 @@ body {
     font-family: "Noto Sans", sans-serif;
 }
 
+
+
 .topBar {
     padding:5px;
 }
@@ -11,13 +13,11 @@ body {
     width: 35%;
     display: flex;
     border-style:none;
-    z-index: 0;
     position: relative;
     border-radius: 0;
     padding-left: 20px;
     color: white;
     height: 30px;
-    align-items: stretch;
 }
 
 .rounded-corners-all-around {
@@ -70,18 +70,14 @@ body {
 .profileImage {
     float:right;
     border-radius: 15px;
-    display: flex;
-    width: 100px;
     height: 100px;
-    position: relative;
+    width: 100px;
     right: 16px;
 }
 
 .grid-row {
     clear: both;
     padding: 10px;
-    border-top-color: rgb(110,118,125);
-    border-top-style: solid;
 }
 
 #selector-1 {
