@@ -1,14 +1,17 @@
 body {
-    background-color: #141d26;
+    background-color: black;
     font-family: "Noto Sans", sans-serif;
+    border-style: solid;
+    border-color: rgb(47,41,54);
+    padding-left: 16px;
 }
 
 
 
-.topBar {
+.wd-topBar {
     padding:5px;
 }
-.searchBar{
+.wd-searchBar{
     background-color: #1b2836;
     width: 35%;
     display: flex;
@@ -20,11 +23,11 @@ body {
     height: 30px;
 }
 
-.rounded-corners-all-around {
+.wd-rounded-corners-all-around {
     border-radius: 15px;
 }
 
-.icon {
+.wd-icon {
     color: rgb(29,161,242);
     display: flex;
     position: absolute;
@@ -33,14 +36,14 @@ body {
 }
 
 
-.hyperlinkUL {
+.wd-hyperlinkUL {
     list-style-type: none;
     display: flex;
     position: relative;
     overflow: hidden;
 }
 
-.hyperlinkLi a{
+.wd-hyperlinkLi a{
     float:left;
     text-decoration: none;
     color: rgb(110,118,125);
@@ -48,7 +51,7 @@ body {
     padding: 16px;
 }
 
-.hyperLinkForYou a{
+.wd-hyperLinkForYou a{
     float: left;
     text-decoration: none;
     border-bottom-color: rgb(29,161,242);
@@ -58,16 +61,16 @@ body {
     border-bottom-style: solid;
 }
 
-.topic {
+.wd-topic {
     font-size: 13px;
     color: rgb(110,118,125)
 }
 
-.author {
+.wd-author {
     color: white;
 }
 
-.profileImage {
+.wd-profileImage {
     float:right;
     border-radius: 15px;
     height: 100px;
@@ -75,7 +78,7 @@ body {
     right: 16px;
 }
 
-.grid-row {
+.wd-grid-row {
     clear: both;
     padding: 10px;
 }
@@ -84,12 +87,12 @@ body {
     padding:10px;
 }
 
-.title {
+.wd-title {
     color: white;
     font-weight: 600;
 }
 
-.elipses {
+.wd-elipses {
     color:rgb(110,118,125);
     font-size:20px;
     float:right;
