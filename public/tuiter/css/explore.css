@@ -1,0 +1,116 @@
+body {
+    background-color: white;
+    font-family: "Noto Sans", sans-serif;
+    border-style: none;
+    border-color: rgb(47,41,54);
+    padding-left: 16px;
+    margin-top: 20px;
+}
+
+.wd-topBar {
+    font-family: "Noto Sans", sans-serif;
+}
+
+
+.wd-searchBar{
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 20px;
+    color: white;
+    height: 30px;
+    border-radius: 15px;
+    margin-bottom: 12px;
+
+}
+
+input.icon::-webkit-input-placeholder {
+    font-family:'FontAwesome';
+}
+
+form {
+    display: inline;
+    width: 90%
+}
+
+li {
+    font-size: 12px;
+}
+
+.wd-icon {
+    color: rgb(29,161,242);
+    padding-left: 12px;
+    display: inline-flex;
+}
+
+.wd-navBar-left {
+    color: black;
+    text-decoration: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+.wd-topic {
+    font-size: 13px;
+    color: rgb(110,118,125)
+}
+
+.wd-author {
+    color: white;
+}
+
+.wd-profileImage {
+    float:right;
+    border-radius: 15px;
+    height: 100px;
+    width: 100px;
+    right: 16px;
+}
+
+.wd-grid-row {
+    clear: both;
+    padding: 10px;
+}
+
+#selector-1 {
+    padding:10px;
+}
+
+.wd-title {
+    color: white;
+    font-weight: 600;
+}
+
+.wd-elipses {
+    color:rgb(110,118,125);
+    font-size:20px;
+    float:right;
+    right: 16px;
+}
+
+h5 {
+    font-size: 12px;
+    margin-bottom: 1px;
+    font-weight: bold;
+    display: inline-flex;
+}
+
+h6 {
+    font-size: 11px;
+    color: gray;
+    display: inline-flex;
+}
+
+.wd-profile-img {
+    width: 15%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 100%;
+}
