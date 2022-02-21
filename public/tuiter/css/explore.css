@@ -11,21 +11,34 @@ body {
     font-family: "Noto Sans", sans-serif;
 }
 
-
-.wd-searchBar{
+.wd-magnifying-icon {
     background-color: white;
-    border-style: solid;
-    border-width: 1px;
-    padding-left: 20px;
-    color: white;
-    height: 30px;
-    border-radius: 15px;
-    margin-bottom: 12px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-right-style: hidden;
+}
+
+.wd-right-searchBar-icon {
+    background-color: white;
+    border-style: hidden;
+}
+
+.wd-searchBar {
+    border-right-style: solid;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-left-style: hidden;
+}
+
+.wd-icon {
+    color: rgb(29, 161, 242);
+    border-style: hidden;
+    display: inline-block;
 
 }
 
-input.icon::-webkit-input-placeholder {
-    font-family:'FontAwesome';
+#fa-icon {
+    margin-left: 3px;
 }
 
 form {
@@ -37,11 +50,6 @@ li {
     font-size: 12px;
 }
 
-.wd-icon {
-    color: rgb(29,161,242);
-    padding-left: 12px;
-    display: inline-flex;
-}
 
 .wd-navBar-left {
     color: black;
@@ -53,10 +61,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: white;
-}
-
 .wd-topic {
     font-size: 13px;
     color: rgb(110,118,125)
@@ -64,14 +68,6 @@ a:hover {
 
 .wd-author {
     color: white;
-}
-
-.wd-profileImage {
-    float:right;
-    border-radius: 15px;
-    height: 100px;
-    width: 100px;
-    right: 16px;
 }
 
 .wd-grid-row {
@@ -97,7 +93,6 @@ a:hover {
 
 h5 {
     font-size: 12px;
-    margin-bottom: 1px;
     font-weight: bold;
     display: inline-flex;
 }
@@ -113,4 +108,20 @@ h6 {
     height: auto;
     margin-right: 20px;
     border-radius: 100%;
+}
+
+
+.wd-center-content-img {
+    max-width: 10%;
+    height: auto;
+    margin: 15px;
+
+    border-radius: 10%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#photoText {
+    color: white;
+
 }
