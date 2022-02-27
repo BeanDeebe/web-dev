@@ -1,10 +1,15 @@
 body {
-    background-color: white;
+    background-color: black;
     font-family: "Noto Sans", sans-serif;
     border-style: none;
-    border-color: rgb(47,41,54);
+    border-color: rgb(47, 41, 54);
     padding-left: 16px;
     margin-top: 20px;
+    color: white;
+}
+
+.bg-item {
+    background-color: black;
 }
 
 .wd-topBar {
@@ -13,29 +18,30 @@ body {
 
 .wd-magnifying-icon {
     background-color: white;
+    color: darkgray;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    border-right-style: hidden;
+    border-style: hidden
 }
 
 .wd-right-searchBar-icon {
-    background-color: white;
+    background-color: black;
     border-style: hidden;
 }
 
 .wd-searchBar {
-    border-right-style: solid;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-left-style: hidden;
+    background-color: white;
+    border-radius: 100%;
+    border-style: hidden;
 }
 
 .wd-icon {
-    color: rgb(29, 161, 242);
+    color: #0c63e4;
     border-style: hidden;
     display: inline-block;
 
 }
+
 
 #fa-icon {
     margin-left: 3px;
@@ -51,8 +57,12 @@ li {
 }
 
 
+span {
+    color: white;
+}
+
 .wd-navBar-left {
-    color: black;
+    background-color: #202020;
     text-decoration: none;
 }
 
@@ -63,7 +73,7 @@ a {
 
 .wd-topic {
     font-size: 13px;
-    color: rgb(110,118,125)
+    color: rgb(110, 118, 125)
 }
 
 .wd-author {
@@ -72,11 +82,11 @@ a {
 
 .wd-grid-row {
     clear: both;
-    padding: 10px;
+    padding-left: 2%;
 }
 
 #selector-1 {
-    padding:10px;
+    padding: 10px;
 }
 
 .wd-title {
@@ -85,9 +95,9 @@ a {
 }
 
 .wd-elipses {
-    color:rgb(110,118,125);
-    font-size:20px;
-    float:right;
+    color: rgb(110, 118, 125);
+    font-size: 20px;
+    float: right;
     right: 16px;
 }
 
@@ -104,9 +114,8 @@ h6 {
 }
 
 .wd-profile-img {
-    width: 15%;
+    width: 10%;
     height: auto;
-    margin-right: 20px;
     border-radius: 100%;
 }
 
@@ -123,5 +132,4 @@ h6 {
 
 #photoText {
     color: white;
-
 }
