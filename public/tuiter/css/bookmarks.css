@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 12px;
     color: white;
 }
@@ -51,17 +51,17 @@ h1 {
 
 .wd-tuitContainer {
     color: white;
-    max-width: 506px;
+    width: 506px;
+    height: auto;
     margin-bottom: 12px;
 }
 
 .wd-contentImage {
-    width: 504px;
-    height: 264px;
+    width: 100%;
+    height: auto;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     display: flex;
-    overflow: auto;
     border-bottom-style: solid;
     border-bottom-color: rgb(110, 118, 125);
 }
@@ -104,6 +104,5 @@ i {
 }
 
 .wd-icons {
-
     text-align: center;
 }

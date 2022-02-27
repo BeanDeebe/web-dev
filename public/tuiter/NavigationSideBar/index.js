@@ -1,15 +1,15 @@
 const NavigationSideBar = () => {
     return (`
         <ul class="list-group">
-                <li class="list-group-item wd-navBar-left bg-item"><a href="#"><i
+                <li id="#tabs-1" class="list-group-item wd-navBar-left bg-item"><a href="#"><i
                         class="fa-brands fa-xl fa-twitter me-4" style="color:white"></i></a>
                 </li>
-                <li class="list-group-item bg-item wd-navBar-left"><a href="#"><i
+                <li class="list-group-item bg-item wd-navBar-left"><a href="../HomeScreen/home.html"><i
                         class="fa-solid fa-xl fa-house me-4" style="color:white"></i> <span
                         class="d-none d-xl-inline-flex">Home</span></a></li>
-                <li class="list-group-item bg-item wd-navBar-left" style="font-weight: bold"><a href="#"><i
+                <li class="list-group-item bg-item wd-navBar-left"><a href="../ExploreScreen/explore.html"><i
                         class="fa-solid fa-xl fa-hashtag me-4" style="color:white"></i><span
-                        class="d-none d-xl-inline-flex"> Explore</span></a></li>
+                        class="d-none d-xl-inline-flex">Explore</span></a></li>
                 <li class="list-group-item bg-item wd-navBar-left"><a  href="#"><i
                         class="fa-solid fa-xl fa-bell me-4" style="color:white"></i><span
                         class="d-none d-xl-inline-flex"> Notifications</span></a></li>
