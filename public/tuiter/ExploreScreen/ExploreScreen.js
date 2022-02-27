@@ -6,7 +6,7 @@ import WhoToFollowList from "../WhoToFollowList/index.js";
     $('#wd-explore').append(`
         <div class="row mt-2">
             <div class="col-2">
-                ${NavigationSidebar()}
+                ${NavigationSidebar('explore')}
                 </div>
             <div class="d-flex col">
                 ${ExploreComponent()}

@@ -6,7 +6,7 @@ import PostSummaryList from "../PostSummaryList/index.js";
     $('#wd-home').append(`
         <div class="row mt-2">
             <div class="col-2">
-                ${NavigationSidebar()}
+                ${NavigationSidebar('home')}
                 </div>
             <div class="d-flex col">
                 ${PostList()}
