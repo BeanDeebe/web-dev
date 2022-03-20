@@ -13,7 +13,7 @@ const PostSummaryItem = (
         }
     }) => {
     return (
-        <div className={"card row wd-grid-row"}>
+        <div className={"row"}>
             <div>
                 <h6 className={"d-inline-flex"}>{post.topic}</h6>
                 <div>

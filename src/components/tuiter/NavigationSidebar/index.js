@@ -15,7 +15,7 @@ const NavigationSidebar = ({active = 'home'}) => {
                         href="../../../../public/tuiter/HomeScreen/home.html">
                         <span><FontAwesomeIcon icon="fa-solid fa-house"
                                                className={"fa-solid fa-xl fa-house me-4"}/></span>Home</a></li>
-                    <li id="explore" className="list-group-item bg-item wd-navBar-left"><a
+                    <li id="explore" className="list-group-item bg-item wd-navBar-left active"><a
                         href="../../../../public/tuiter/ExploreScreen/explore.html"><span><FontAwesomeIcon
                         icon="fa-solid fa-hashtag" className={"fa-solid fa-xl fa-hashtag me-4"}/>Explore</span></a></li>
                     <li id="notifications" className="list-group-item bg-item wd-navBar-left"><a href="#"><span
