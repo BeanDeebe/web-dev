@@ -1,0 +1,135 @@
+body {
+    background-color: black;
+    font-family: "Noto Sans", sans-serif;
+    border-style: none;
+    border-color: rgb(47, 41, 54);
+    padding-left: 16px;
+    margin-top: 20px;
+    color: white;
+}
+
+.bg-item {
+    background-color: black;
+}
+
+.wd-topBar {
+    font-family: "Noto Sans", sans-serif;
+}
+
+.wd-magnifying-icon {
+    background-color: white;
+    color: darkgray;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-style: hidden
+}
+
+.wd-right-searchBar-icon {
+    background-color: black;
+    border-style: hidden;
+}
+
+.wd-searchBar {
+    background-color: white;
+    border-radius: 100%;
+    border-style: hidden;
+}
+
+.wd-icon {
+    color: #0c63e4;
+    border-style: hidden;
+    display: inline-block;
+
+}
+
+
+#fa-icon {
+    margin-left: 3px;
+}
+
+form {
+    display: inline;
+    width: 90%
+}
+
+li {
+    font-size: 12px;
+}
+
+
+span {
+    color: white;
+}
+
+.wd-navBar-left {
+    background-color: #202020;
+    text-decoration: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.wd-topic {
+    font-size: 13px;
+    color: rgb(110, 118, 125)
+}
+
+.wd-author {
+    color: white;
+}
+
+.wd-grid-row {
+    clear: both;
+    padding-left: 2%;
+}
+
+#selector-1 {
+    padding: 10px;
+}
+
+.wd-title {
+    color: white;
+    font-weight: 600;
+}
+
+.wd-elipses {
+    color: rgb(110, 118, 125);
+    font-size: 20px;
+    float: right;
+    right: 16px;
+}
+
+h5 {
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-flex;
+}
+
+h6 {
+    font-size: 11px;
+    color: gray;
+    display: inline-flex;
+}
+
+.wd-profile-img {
+    width: 20%;
+    height: auto;
+    border-radius: 100%;
+}
+
+
+.wd-center-content-img {
+    max-width: 10%;
+    height: auto;
+    margin: 15px;
+
+    border-radius: 10%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#photoText {
+    color: white;
+}

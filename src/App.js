@@ -1,10 +1,16 @@
 import './App.css';
 import './vendors/bootstrap/bootstrap.min.css';
-import './vendors/fontawesome/css/fontawesome.min.css';
 import HelloWorld from "./components/hello-world/hello-world";
 import Labs from "./components/labs/index";
 import Tuiter from "./components/tuiter/";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {library} from '@fortawesome/fontawesome-svg-core'
+import {fab} from '@fortawesome/free-brands-svg-icons'
+import {fas} from '@fortawesome/free-solid-svg-icons'
+
+
+library.add(fab, fas)
+
 
 function App() {
     return (
