@@ -8,6 +8,7 @@ import {library} from '@fortawesome/fontawesome-svg-core'
 import {fab} from '@fortawesome/free-brands-svg-icons'
 import {fas} from '@fortawesome/free-solid-svg-icons'
 import HomeScreen from "./components/tuiter/HomeScreen";
+import ExploreScreen from "./components/tuiter/ExploreScreen";
 library.add(fab, fas)
 function App() {
     return (
@@ -23,9 +24,9 @@ function App() {
                     <Route path="/tuiter"
                            exact={true}
                            element={<Tuiter/>}/>
-                    <Route path={"/home"}
-                           exact={true}
-                           element={<HomeScreen/>}/>
+                    <Route path="/tuiter/home" element={<HomeScreen/>}/>
+                    <Route path="/tuiter/explore" element={<ExploreScreen/>}/>
+
                 </Routes>
             </div>
         </BrowserRouter>
