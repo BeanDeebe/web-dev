@@ -12,11 +12,23 @@
     font-size: 12px;
 }
 
+.wd-color {
+    background-color: #0c63e4;
+    border-color: #0c63e4;
+}
+
 .wd-icon {
     color: #0c63e4;
     border-style: hidden;
-    display: flex;
+    display: inline-block;
     align-content: flex-start;
+}
+
+.wd-tuit-icon-button {
+    color: #0c63e4;
+    border-style: hidden;
+    display: flex;
+    align-content: flex-end;
 }
 
 .wd-accountInfo {

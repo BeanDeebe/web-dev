@@ -1,5 +1,6 @@
 [
   {
+    "_id": "",
     "avatarIcon": "../images/atari.jpg",
     "userName": "Atari",
     "userHandle": "@atari",
@@ -13,6 +14,7 @@
     "likes": "200k"
   },
   {
+    "_id": "",
     "avatarIcon": "../images/NASA_logo.svg.png",
     "userName": "NASA",
     "userHandle": "@nasa",
@@ -26,6 +28,7 @@
     "likes": "1,337"
   },
   {
+    "_id": "",
     "avatarIcon": "../images/bloomberg.jpeg",
     "userName": "Bloomberg",
     "userHandle": "@bloomberg",
