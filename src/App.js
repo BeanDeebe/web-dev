@@ -17,7 +17,7 @@ library.add(fab, fas)
 function App() {
     return (
         <BrowserRouter>
-            <div className="container">
+            <div className="container" id={"root"}>
                 <Routes>
                     <Route path="/">
                         <Route path="labs"
