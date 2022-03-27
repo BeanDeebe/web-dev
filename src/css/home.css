@@ -1,9 +1,22 @@
 .wd-avatar {
-    width: 48px;
-    height: 48px;
+    width: 10%;
+    height: auto;
     border-radius: 50%;
     display: flex;
     margin: 1%
+}
+
+.wd-tuitArea {
+    background-color: black;
+    color: rgb(110, 118, 125);
+    font-size: 12px;
+}
+
+.wd-icon {
+    color: #0c63e4;
+    border-style: hidden;
+    display: flex;
+    align-content: flex-start;
 }
 
 .wd-accountInfo {

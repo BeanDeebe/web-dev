@@ -25,7 +25,7 @@ const PostListItem = (
                 <img src={post.avatarIcon} className="wd-avatar" alt="profile image"/>
                 <div>
                     <span className="wd-tuitName">{post.userName}</span>&nbsp;<span
-                    className="wd-tuitHandle">${post.userHandle} - ${post.time}</span>
+                    className="wd-tuitHandle">{post.userHandle} - {post.time}</span>
                     <p className="wd-tuitContent">{post.body}</p>
                     <div>
                         <img src={post.image} alt="" className="wd-contentImage"/>

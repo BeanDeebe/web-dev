@@ -24,5 +24,18 @@
     "comments": "69K",
     "retweets": "420",
     "likes": "1,337"
+  },
+  {
+    "avatarIcon": "../images/bloomberg.jpeg",
+    "userName": "Bloomberg",
+    "userHandle": "@bloomberg",
+    "time": "1 week",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "image": "",
+    "imageDescriptionTitle": "",
+    "imageDescriptionBody": "",
+    "comments": "69K",
+    "retweets": "1000",
+    "likes": "138"
   }
 ]
