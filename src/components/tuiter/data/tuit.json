@@ -11,7 +11,8 @@
     "imageDescriptionBody": "It's spherical... SPHERICAL.",
     "comments": "400K",
     "retweets": "36.5K",
-    "likes": "200k"
+    "likes": "200k",
+    "liked": false
   },
   {
     "_id": "",
@@ -25,7 +26,8 @@
     "imageDescriptionBody": "Tune into our webinar on Monday, June 7th to find out.",
     "comments": "69K",
     "retweets": "420",
-    "likes": "1,337"
+    "likes": "1,337",
+    "liked": false
   },
   {
     "_id": "",
@@ -39,6 +41,7 @@
     "imageDescriptionBody": "",
     "comments": "69K",
     "retweets": "1000",
-    "likes": "138"
+    "likes": "138",
+    "liked": false
   }
 ]

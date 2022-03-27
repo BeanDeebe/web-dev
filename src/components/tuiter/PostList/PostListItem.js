@@ -2,6 +2,7 @@ import "../../../css/explore.css"
 import "../../../vendors/bootstrap/bootstrap.min.css"
 import "../../../css/home.css"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {useDispatch} from "react-redux";
 
 const PostListItem = (
     {
@@ -16,14 +17,21 @@ const PostListItem = (
             imageDescriptionBody: "It's spherical... SPHERICAL.",
             comments: "400K",
             retweets: "36.5K",
-            likes: "200k"
+            likes: "200k",
+            liked: false
         }
     }) => {
+    const dispatch = useDispatch();
+    const deleteTuit = (tuit) => {
+        dispatch({type: 'delete-tuit', tuit})
+    };
     return (
         <div className="wd-image-text-border row">
             <div className="wd-accountInfo">
                 <img src={post.avatarIcon} className="wd-avatar" alt="profile image"/>
                 <div>
+                    <i onClick={() => deleteTuit(post)} className="fas fa-remove fa-pull-right"><FontAwesomeIcon
+                        icon="fa-solid fa-x"/></i>
                     <span className="wd-tuitName">{post.userName}</span>&nbsp;<span
                     className="wd-tuitHandle">{post.userHandle} - {post.time}</span>
                     <p className="wd-tuitContent">{post.body}</p>

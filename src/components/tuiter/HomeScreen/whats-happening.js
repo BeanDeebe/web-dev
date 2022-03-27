@@ -14,7 +14,6 @@ const WhatsHappening = () => {
             tuit: whatsHappening
         });
     }
-
     return (
         <div className="mb-3">
             <div className="wd-accountInfo">

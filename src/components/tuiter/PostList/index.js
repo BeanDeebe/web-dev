@@ -6,7 +6,6 @@ import "../../../vendors/bootstrap/bootstrap.min.css"
 
 const PostList = () => {
     const post = useSelector((state) => state.tuits);
-
     return (
         <ul>
             {
