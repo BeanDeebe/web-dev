@@ -3,8 +3,8 @@ import React from "react";
 import Classes from "../classes";
 import Styles from "./styles";
 import ConditionalOutput from "./conditional-output";
-import ToDoItem from "./todo/ToDoItem";
 import TodoList from "./todo/TodoList";
+import ReduxExamples from "./redux-examples";
 
 const Labs = () => {
     return (
@@ -20,6 +20,7 @@ const Labs = () => {
             <Styles/>
             <Classes/>
             <TodoList/>
+            <ReduxExamples/>
         </div>
     )
 };
