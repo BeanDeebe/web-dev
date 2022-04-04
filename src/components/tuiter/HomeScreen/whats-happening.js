@@ -8,6 +8,7 @@ const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening]
         = useState('');
     const dispatch = useDispatch();
+
     const tuitClickHandler = () => {
         dispatch({
             type: 'create-tuit',

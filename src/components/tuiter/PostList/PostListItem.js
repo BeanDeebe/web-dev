@@ -3,44 +3,45 @@ import "../../../vendors/bootstrap/bootstrap.min.css"
 import "../../../css/home.css"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {useDispatch} from "react-redux";
+import React from "react";
+import {deleteTuit} from "../../actions/tuits-actions";
 
 const PostListItem = (
     {
         post = {
-            avatarIcon: "../images/atari.jpg",
-            userName: "Atari",
-            userHandle: "@atari",
-            time: "2h",
-            body: "Our exciting news we want to share!",
-            image: "../images/gamesphere.jpeg",
-            imageDescriptionTitle: "GameSphere Promises Immersive Experience",
-            imageDescriptionBody: "It's spherical... SPHERICAL.",
-            comments: "400K",
-            retweets: "36.5K",
-            likes: "200k",
+            avatarIcon: "",
+            userName: "",
+            userHandle: "",
+            time: "",
+            body: "",
+            image: "",
+            imageDescriptionTitle: "",
+            imageDescriptionBody: "",
+            comments: "",
+            retweets: "",
+            likes: "",
             liked: false
         }
     }) => {
     const dispatch = useDispatch();
-    const deleteTuit = (tuit) => {
-        dispatch({type: 'delete-tuit', tuit})
-    };
     return (
-        <div className="wd-image-text-border row">
+        <div className="wd-tuitContent row">
             <div className="wd-accountInfo">
                 <img src={post.avatarIcon} className="wd-avatar" alt="profile image"/>
                 <div>
-                    <i onClick={() => deleteTuit(post)} className="fas fa-remove fa-pull-right"><FontAwesomeIcon
+                    <i className="fas fa-remove p-1 float-end"
+                       onClick={() => deleteTuit(
+                           dispatch, post)}><FontAwesomeIcon
                         icon="fa-solid fa-x"/></i>
-                    <span className="wd-tuitName">{post.userName}</span>&nbsp;<span
+                    <span className="wd-tuitName">{post.userName}</span> <span
                     className="wd-tuitHandle">{post.userHandle} - {post.time}</span>
                     <p className="wd-tuitContent">{post.body}</p>
                     <div>
-                        <img src={post.image} alt="" className="wd-contentImage"/>
+                        <img src={post.image} className="wd-contentImage"/>
                     </div>
                     <div>
-                        <span className="wd-contentImageDescription-title">{post.imageDescriptionTitle}</span>
-                        <p className="wd-contentImageDescription-body">{post.imageDescriptionBody}</p>
+                        <span className="">{post.imageDescriptionTitle}</span>
+                        <p className="">{post.imageDescriptionBody}</p>
                         <div>
                             <FontAwesomeIcon icon="fa-solid fa-comment" className={"wd-first-icon wd-tuit-icons"}/><span
                             className="wd-icon-text">{post.comments}</span>
