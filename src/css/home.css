@@ -1,5 +1,5 @@
 .wd-avatar {
-    width: 10%;
+    width: 12%;
     height: auto;
     border-radius: 50%;
     display: flex;
@@ -7,9 +7,10 @@
 }
 
 .wd-tuitArea {
-    background-color: black;
+    background-color: white;
     color: rgb(110, 118, 125);
     font-size: 12px;
+    width: 100%;
 }
 
 .wd-color {
@@ -34,6 +35,7 @@
 .wd-accountInfo {
     align-items: flex-start;
     display: flex;
+    width: 100%
 }
 
 .wd-tuitName {
@@ -82,7 +84,7 @@
 }
 
 .wd-tuit-icons {
-    padding-left: 50px;
+    padding-left: 25px;
     padding-right: 12px;
     padding-bottom: 5px;
     color: rgb(110, 118, 125)

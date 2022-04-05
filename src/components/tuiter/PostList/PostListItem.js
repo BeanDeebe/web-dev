@@ -5,40 +5,38 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {useDispatch} from "react-redux";
 import React from "react";
 import {deleteTuit} from "../../actions/tuits-actions";
+import {updateTuit} from "../../actions/tuits-actions";
 
 const PostListItem = (
     {
         post = {
             avatarIcon: "",
-            userName: "",
-            userHandle: "",
+            username: "",
+            userhandle: "",
+            profileImg: "",
             time: "",
-            body: "",
+            tuit: "",
             image: "",
             imageDescriptionTitle: "",
             imageDescriptionBody: "",
             comments: "",
             retweets: "",
-            likes: "",
-            liked: false
+            dislikes: "0",
+            likes: "0",
         }
     }) => {
     const dispatch = useDispatch();
     return (
         <div className="wd-tuitContent row">
             <div className="wd-accountInfo">
-                <img src={post.avatarIcon} className="wd-avatar" alt="profile image"/>
-                <div>
-                    <i className="fas fa-remove p-1 float-end"
+                <img src={post.profileImg} className="wd-avatar" alt="profile image"/>
+                <div className="w-100">
+                    <i className="fas fa-remove px-2 float-end"
                        onClick={() => deleteTuit(
-                           dispatch, post)}><FontAwesomeIcon
-                        icon="fa-solid fa-x"/></i>
-                    <span className="wd-tuitName">{post.userName}</span> <span
-                    className="wd-tuitHandle">{post.userHandle} - {post.time}</span>
-                    <p className="wd-tuitContent">{post.body}</p>
-                    <div>
-                        <img src={post.image} className="wd-contentImage"/>
-                    </div>
+                           dispatch, post)}><FontAwesomeIcon icon="fa-solid fa-x"/></i>
+                    <span className="wd-tuitName">{post.username}</span> <span
+                    className="wd-tuitHandle">{post.userhandle} - {post.time}</span>
+                    <p className="wd-tuitContent">{post.tuit}</p>
                     <div>
                         <span className="">{post.imageDescriptionTitle}</span>
                         <p className="">{post.imageDescriptionBody}</p>
@@ -47,8 +45,21 @@ const PostListItem = (
                             className="wd-icon-text">{post.comments}</span>
                             <FontAwesomeIcon icon="fa-solid fa-retweet" className={"wd-tuit-icons"}/><span
                             className="wd-icon-text">{post.retweets}</span>
-                            <FontAwesomeIcon icon="fa-solid fa-heart" className={"wd-tuit-icons"}/><span
-                            className="wd-icon-text">{post.likes}</span>
+                            <span className="wd-tuit-icons">
+                            <i onClick={() => updateTuit(dispatch, {
+                                ...post,
+                                likes: post.likes + 1
+                            })}>Likes: {post.likes}<FontAwesomeIcon icon="fa-solid fa-thumbs-up" className="ps-1"/></i>
+                                </span>
+
+                            <span className="wd-tuit-icons">
+                            <i onClick={() => updateTuit(dispatch, {
+                                ...post,
+                                dislikes: post.dislikes + 1
+                            })}>Dislikes: {post.dislikes}<FontAwesomeIcon icon="fa-solid fa-thumbs-down"
+                                                                          className="ps-1"/></i>
+                                </span>
+
                             <FontAwesomeIcon icon="fa-solid fa-arrow-up-from-bracket" className={"wd-tuit-icons"}/>
                         </div>
                     </div>

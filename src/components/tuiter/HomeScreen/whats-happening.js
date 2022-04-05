@@ -3,37 +3,48 @@ import profilePic from "../../../profile-pic.jpg"
 import "../../../css/home.css"
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
+import {createTuit} from "../../actions/tuits-actions";
 
 const WhatsHappening = () => {
+    const [newTuit, setNewTuit] =
+        useState({tuit: 'New tuit'});
     let [whatsHappening, setWhatsHappening]
         = useState('');
     const dispatch = useDispatch();
 
     const tuitClickHandler = () => {
         dispatch({
-            type: 'create-tuit',
+            type: 'CREATE_TUIT',
             tuit: whatsHappening
         });
     }
     return (
         <div className="mb-3">
-            <div className="wd-accountInfo">
-                <img src={profilePic} className="wd-avatar" alt="profile image"/>
-                <div>
-                    <textarea value={whatsHappening}
-                              onChange={(event) =>
-                                  setWhatsHappening(event.target.value)} cols={"74"} className="wd-tuitArea mb-1"
-                              placeholder={"What's happening?"}/>
-                    <FontAwesomeIcon icon="fa-solid fa-image" className="wd-icon p-1"/>
-                    <FontAwesomeIcon icon="fa-solid fa-chart-line" className="wd-icon p-1"/>
-                    <FontAwesomeIcon icon="fa-solid fa-face-smile" className="wd-icon p-1"/>
-                    <FontAwesomeIcon icon="fa-solid fa-calendar" className="wd-icon p-1"/>
-                    <button className="wd-color btn btn-primary btn-sm rounded-pill text-right float-end"
-                            onClick={tuitClickHandler}>
-                        Tuit
-                    </button>
-                </div>
+            <div className="row">
+                <img src={profilePic} className="wd-avatar flex-row" alt="profile image"/>
+                <textarea className="form-control w-75 mb-1"
+                          placeholder={"What's Happening?"}
+                          onChange={(e) =>
+                              setNewTuit({
+                                  ...newTuit,
+                                  tuit: e.target.value,
+                                  profileImg: profilePic,
+                                  username: "Dean Beebe",
+                                  userhandle: "@beandeebe",
+                                  time: "1s"
+                              })}> </textarea>
+
             </div>
+            <div>
+                <button onClick={() => createTuit(dispatch, newTuit)} className="btn btn-primary float-end">
+                    Tuit
+                </button>
+                <FontAwesomeIcon icon="fa-solid fa-image" className="wd-icon p-2"/>
+                <FontAwesomeIcon icon="fa-solid fa-chart-line" className="wd-icon p-2"/>
+                <FontAwesomeIcon icon="fa-solid fa-face-smile" className="wd-icon p-2"/>
+                <FontAwesomeIcon icon="fa-solid fa-calendar" className="wd-icon p-2"/>
+            </div>
+
         </div>
     )
 }
