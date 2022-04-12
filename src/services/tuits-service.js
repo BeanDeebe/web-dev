@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE = "https://full-stack-developer-server1.herokuapp.com/api";
+const API_BASE = "https://full-stack-developer-server69.herokuapp.com/api";
 const TUITS_API = `${API_BASE}/tuits`;
 
 export const findAllTuits = async () => {
